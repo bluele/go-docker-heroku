@@ -6,5 +6,8 @@
   ],
   "image": "heroku/go:1.5",
   "repository": "http://github.com/bluele/go-docker-heroku",
-  "scripts": {}
+  "scripts": {},
+  "addons": [
+    "heroku-redis"
+  ]
 }
