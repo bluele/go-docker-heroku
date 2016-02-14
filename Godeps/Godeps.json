@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/bluele/go-docker-heroku",
+	"GoVersion": "go1.5.3",
+	"Deps": []
+}
