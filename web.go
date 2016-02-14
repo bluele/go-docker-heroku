@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 )
 
 var _, _ = fmt.Print("ok")
@@ -13,5 +14,5 @@ func main() {
 		fmt.Fprint(w, "ok")
 	})
 	log.Println("start server.")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
 }
